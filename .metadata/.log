@@ -250,3 +250,45 @@ Caused by: java.io.IOException: The process cannot access the file because anoth
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:512)
 	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:184)
 	... 7 more
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-04-14 15:13:19.780
+!MESSAGE An internal error occurred during: "Resetting to refs/heads/master".
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of reset command. {0}
+	at org.eclipse.jgit.api.ResetCommand.call(ResetCommand.java:227)
+	at org.eclipse.egit.core.op.ResetOperation.reset(ResetOperation.java:97)
+	at org.eclipse.egit.core.op.ResetOperation.access$0(ResetOperation.java:85)
+	at org.eclipse.egit.core.op.ResetOperation$1.run(ResetOperation.java:74)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.egit.core.op.ResetOperation.execute(ResetOperation.java:78)
+	at org.eclipse.egit.core.internal.job.JobUtil$2.runInWorkspace(JobUtil.java:105)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.io.IOException: Could not write file C:\Users\Soroush\Documents\Google Drive\Programming\Workspace\Eclipse\C++\USACO Training\.metadata\.plugins\org.eclipse.cdt.core\._.log5512466653715067541.tmp
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkoutEntry(DirCacheCheckout.java:1154)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.doCheckout(DirCacheCheckout.java:458)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkout(DirCacheCheckout.java:393)
+	at org.eclipse.jgit.api.ResetCommand.checkoutIndex(ResetCommand.java:393)
+	at org.eclipse.jgit.api.ResetCommand.call(ResetCommand.java:200)
+	... 8 more
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-04-14 15:14:09.426
+!MESSAGE An internal error occurred during: "Resetting to refs/heads/master".
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of reset command. {0}
+	at org.eclipse.jgit.api.ResetCommand.call(ResetCommand.java:227)
+	at org.eclipse.egit.core.op.ResetOperation.reset(ResetOperation.java:97)
+	at org.eclipse.egit.core.op.ResetOperation.access$0(ResetOperation.java:85)
+	at org.eclipse.egit.core.op.ResetOperation$1.run(ResetOperation.java:74)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.egit.core.op.ResetOperation.execute(ResetOperation.java:78)
+	at org.eclipse.egit.core.internal.job.JobUtil$2.runInWorkspace(JobUtil.java:105)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.io.IOException: Could not write file C:\Users\Soroush\Documents\Google Drive\Programming\Workspace\Eclipse\C++\USACO Training\.metadata\.plugins\org.eclipse.cdt.core\._.log7407518646254478229.tmp
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkoutEntry(DirCacheCheckout.java:1154)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.doCheckout(DirCacheCheckout.java:458)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkout(DirCacheCheckout.java:393)
+	at org.eclipse.jgit.api.ResetCommand.checkoutIndex(ResetCommand.java:393)
+	at org.eclipse.jgit.api.ResetCommand.call(ResetCommand.java:200)
+	... 8 more
